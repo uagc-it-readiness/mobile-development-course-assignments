@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script type="text/javascript">
+          function execute() {
+             // Add triangle exercise code here
+for (var i = "#"; i<="#######" ; i=i+"#")
+{
+    console.log(i);
+}
+             // end triangle code
+             
+             // start fizzbuzz code
+for (var i = 1; i <= 100; i++){
+    if (i%15 == 0)
+    console.log("Fizzbuzz")
+    else if (i%3 == 0)
+        console.log("Fizz")
+    else if (i%5 == 0)
+        console.log("Buzz")
+    else
+        console.log(i)
+
+}
+             // end fizzbuzz code
+
+             // start chessboard code
+var size = 8;
+var i = ""
+
+for (var y = 0; y < size; y++) {
+
+
+    for (var x = 0; x < size; x++) {
+
+        if ((x+y) % 2 == 0)
+            i = i + " ";
+        else
+            i = i + "#";
+    }
+   i = i + "\n";
+}
+console.log(i);
+             // end chessboard code
+          }
+    </script>
+</head>
+<body>
+  <input type="button" onclick="execute()" value="Execute Code" />
+</body>
+</html>
