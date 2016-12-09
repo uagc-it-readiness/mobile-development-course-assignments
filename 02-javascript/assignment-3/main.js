@@ -22,11 +22,11 @@ function testRangeFunction() {
     console.log(resultString);
 }
 
-// test the range function
+// test the sum function
 function testSumFunction() {
     var resultString = "testSumFunction:";
 
-    if (sum(range(1,10) === 55))
+    if (sum(range(1,10)) === 55)
         resultString += "pass";
     else
         resultString += "fail";
