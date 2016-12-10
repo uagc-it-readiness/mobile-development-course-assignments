@@ -1,11 +1,36 @@
-function range(start, end) {
+//function range(start, end) {
     // your code here
+//}
+
+//function sum(array) {
+    // your sum function here
+//}
+/**
+ * Created by guangyuancai on 2016/12/10.
+ */
+function range(beginN,finishN,step) {
+    var newArray = [];
+    if (step == undefined)
+        step = 1;
+    for (var i = 0; i<= Math.abs((finishN-beginN)/step); i++ ) {
+
+        if (beginN < finishN)
+            newArray[i] = beginN + i * step;
+        else
+            newArray[i] = beginN - i * Math.abs(step);
+    }
+    return newArray;
 }
+
+/*console.log(range(1,10));
+//console.log(range(2,100));
+console.log(range(5,2,-1));
+console.log(sum(range(5,2,-1)));*/
 
 function sum(array) {
-    // your sum function here
-}
+    return (array[0] + array[array.length-1]) * array.length /2
 
+}
 
 // do not edit below this line
 
