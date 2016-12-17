@@ -18,7 +18,7 @@ Create a savings calculator that will calculate how much a savings account would
 10. Give the second button a value attribute of "Reset" and an onclick attribute that is equal to "reset()".
 11. Add another p tag with in id of "results_table" that will hold the generated results table.
 12. Open the main.js file and define the calculate and reset functions. calculate should generate a view like that below. reset should clear out the results table. <br>
-![Results Image](assignment-5-results.JPG)
+![Results Image](assignment-5-results.JPG?raw=true)
 
 Hints
 * To calculate the interest earned for the first month use 'amount * ((rate / 100)/12)'
