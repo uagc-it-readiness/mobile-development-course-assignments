@@ -1,0 +1,2 @@
+## Assignment 6 - A simple CRUD application with JavaScript
+Create the CRUD application available at the following website: [A simple CRUD application with Javascript](https://medium.com/@etiennerouzeaud/a-simple-crud-application-with-javascript-ebc82f688c59#.ulx4d4cx6)
