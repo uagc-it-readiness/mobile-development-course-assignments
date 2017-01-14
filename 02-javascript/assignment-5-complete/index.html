@@ -1,0 +1,21 @@
+<html>
+<head>
+  <style>
+    /* Defines a cleaner look for tables */
+    table  { border-collapse: collapse; }
+    td, th { border: 1px solid black; padding: 3px 8px; }
+    th     { text-align: left; }
+  </style>
+  <script type="text/javascript" src="main.js" ></script>
+</head>
+<body>
+  <h3>Savings Rate Calculator</h3>
+  <p>Starting amount: <input id="amount" type="number" /></p>
+  <p>Rate of return (percent): <input id="rate" type="number" /></p>
+  <p>Years: <input id="years" type="number" /></p>
+  <input type="button" onclick="calculate()" value="Calculate" /> 
+  <input type="button" onclick="reset()" value="Reset" />
+  <p id="earnings_report">
+  </p>
+</body>
+</html>
