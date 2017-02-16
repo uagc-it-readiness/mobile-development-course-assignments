@@ -10,21 +10,18 @@ Assignment
 * Changes to the assignment list should update the student's performance table immediately
 * The grade should be calculated based on the percentage of points scored vs points possible <br/>
   90 - 100 = A, 80 - 89 = B, 70-79 = C, 60-69 = D, \<60 = F
-  <p>
+
   Use the following css to style your tables.
-  ```
+```
     <style>
     /* Defines a cleaner look for tables */
     table  { border-collapse: collapse; }
     td, th { border: 1px solid black; padding: 3px 8px; }
     th     { text-align: left; }
     </style>
-  ```
-  </p>
-  <p>
-![Results Image](Screen Shot 2017-02-11 at 1.18.10 PM.png?raw=true)
+```
 
-  </p>
+![Results Image](Screen Shot 2017-02-11 at 1.18.10 PM.png?raw=true)
 # Angular QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 
