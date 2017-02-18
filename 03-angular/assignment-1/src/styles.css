@@ -3,3 +3,8 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+table  { border-collapse: collapse; }
+td, th { border: 1px solid black; padding: 3px 8px; }
+th     { text-align: left; }
+button { padding: none; }

@@ -1,0 +1,53 @@
+<p><strong>Student:</strong> {{name}}</p>
+  <p><strong>Email:</strong> {{email}}</p>
+  <p><strong>Peformance</strong></p>
+  <table>
+    <tr>
+      <th> Points</th>
+      <th> Points Possible </th>
+      <th> Percent </th>
+      <th> Grade </th>
+    </tr>
+    <tr>
+      <td> {{tPoints}} </td>
+      <td> {{tPointsPossible}} </td>
+      <td> {{tGrade | percent}} </td>
+      <td> {{tLetterGrade}} </td>
+    </tr>
+  </table>
+  <hr />
+  <p><strong>Add Assignment</strong></p>
+  
+  <form>
+
+    <p><label>Assignment Name: </label>
+    <input type="text" name="name" [(ngModel)]="iAssignmentName" /></p>
+    
+    <p><label>Scored Points: </label>
+    <input type="number" name="scoredPoints" [(ngModel)]="iPointsScored" /></p>
+    <p><label>Points Possible</label>
+    <input type="number" name="pointsPossible" [(ngModel)]="iPointsPossible" /></p>
+    
+  </form>
+  
+  <button (click)="addAssignment()">Add Assignment</button>
+
+  <p><strong>Assignments</strong></p>
+  <table style = "border: 1px solid black">
+    <tr>
+      <th> Assignment Name </th>
+      <th> Points Scored </th>
+      <th> Points Possible </th>
+      <th> Percent </th>
+      <th> Grade </th>
+    </tr>
+    <tr *ngFor="let assignmentItem of assignmentList; let i = index;">
+      <td>{{assignmentItem.name}}</td>
+      <td>{{assignmentItem.pointsScored}}</td>
+      <td>{{assignmentItem.pointsPossible}}</td>
+      <td>{{assignmentItem.percent | percent}}</td>
+      <td>{{assignmentItem.letterGrade}}</td>
+    <button (click)="removeAssignment(i)">x</button>
+    </tr>
+   
+  </table>
