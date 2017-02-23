@@ -1,0 +1,37 @@
+<p><strong>Student: </strong> {{ name }}</p>
+<p><strong>Email: </strong> {{ email }}</p>
+
+<h3>Performance</h3>
+<table>
+    <tr>
+        <th>Points</th><th>Points Possible</th><th>Percent</th><th>Grade</th>
+    </tr>
+    <tr>
+        <td>{{pointsScored}}</td><td>{{pointsPossible}}</td><td>{{percent}}</td><td>{{ grade }}</td>
+    </tr>
+</table>
+
+<hr />
+
+<h3>Add Assignment </h3>
+<p>
+    Assignment Name: <input type="text" [(ngModel)]="iName" />
+</p>
+<p>
+    Scored Points: <input type="number" [(ngModel)]="iScore"/>
+</p>
+<p>
+    Points Possible: <input type="number" [(ngModel)]="iScorePossible"/>
+</p>
+
+<button type ='submit' (click)="addAssignment()"> Push me, baby </button>
+
+<h3>Assignments </h3>
+<table>
+    <tr>
+       <th>Points</th><th>Points Possible</th><th>Percent</th><th>Grade</th>
+    </tr>
+    <tr>
+        <td>green moose</td><td>baba juice</td><td>Giant Snake</td><td>birthday cake</td>
+    </tr>
+</table>
