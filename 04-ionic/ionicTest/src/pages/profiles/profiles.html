@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      GitHub Profiles
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+  <form (ngSubmit)="onSubmit()">
+  <ion-item>
+    <ion-label>GitHub User: </ion-label>
+    <ion-input [(ngModel)]="github_user" type="text" name="github_user"></ion-input> 
+  </ion-item>
+  <br/>
+  <button ion-button clear small type="submit">Sizzerch</button>
+</form>
+</ion-card>
+<ion-card *ngIf="profile">
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="{{ profile.avatar_url}}"/>
+    </ion-avatar>
+    <h2> {{profile.name }}</h2>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="person"></ion-icon>
+        <div>
+          {{profile.followers }} Followers
+        </div>
+      </button>
+        <button ion-button icon-left clear small (click)="showRepos(profile.login)">
+        <ion-icon name="git-branch"></ion-icon>
+        <div>
+          {{profile.public_repos }} Public Repos
+        </div>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-card *ngIf="repos">
+  <ion-list>
+    <ion-item *ngFor="let repo of repos" (click)="repoTapped($event, repo)">
+      <h2>{{ repo.name}}</h2>
+      <p>{{ repo.description }}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-card>
+
+</ion-content>

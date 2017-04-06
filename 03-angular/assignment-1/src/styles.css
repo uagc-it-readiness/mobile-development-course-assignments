@@ -3,3 +3,11 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+<<<<<<< HEAD
+=======
+table  { border-collapse: collapse; }
+td, th { border: 1px solid black; padding: 3px 8px; }
+th     { text-align: left; }
+button { padding: none; }
+>>>>>>> 6db111cb9521f61be2fc6ca9a3ec83b67a1fac96
